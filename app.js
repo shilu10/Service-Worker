@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 
+app.get('/about', (req, res) => {
+    res.sendFile('about.html')
+})
+
 
 app.listen(port = 2000, () => {
     console.log("Server is running on port 2000")
