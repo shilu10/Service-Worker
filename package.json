@@ -1,0 +1,23 @@
+{
+  "name": "service_worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shilu10/Service-Worker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shilu10/Service-Worker/issues"
+  },
+  "homepage": "https://github.com/shilu10/Service-Worker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
