@@ -69,4 +69,13 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
     console.log("Service Worker : fetch!")
+    event.respondWith(
+        // we are sending the request to the server. if network is down, then sending the res
+        // from the cache.
+        fetch(event.request)
+        .catch(() => {
+            caches.match(event.request)
+        })
+        
+    )
 })
